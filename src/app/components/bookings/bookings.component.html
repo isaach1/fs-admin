@@ -1,0 +1,21 @@
+<div>
+  <h1><b>Bookings Table</b></h1>
+</div>
+
+<div>
+  <table style="width:100%">
+    <tr>
+      <th>Date From</th>
+      <th>Date To</th>
+      <th>User ID</th>
+      <th>Property ID</th>
+    </tr>
+    <tr *ngFor = "let booking of bookings">
+      <td>{{booking.dateFrom}}</td>
+      <td>{{booking.dateTo}}</td>
+      <td>{{booking.userId}}</td>
+      <td>{{booking.propertyId}}</td>
+    </tr>
+  </table>
+</div>
+

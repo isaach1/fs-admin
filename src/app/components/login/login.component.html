@@ -1,0 +1,20 @@
+<div>
+  <h1><b>Users Table</b></h1>
+</div>
+
+<div>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+    <tr *ngFor = "let user of users">
+      <td>{{user.firstname}}</td>
+      <td>{{user.lastname}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.role}}</td>
+    </tr>
+  </table>
+</div>

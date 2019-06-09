@@ -1,0 +1,21 @@
+<div>
+  <h1><b>Properties Table</b></h1>
+</div>
+
+<div>
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Location</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor = "let property of properties">
+      <td>{{property.name}}</td>
+      <td>{{property.imageUrl}}</td>
+      <td>{{property.location}}</td>
+      <td>{{property.price}}</td>
+    </tr>
+  </table>
+</div>
+
